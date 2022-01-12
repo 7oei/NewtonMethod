@@ -24,8 +24,8 @@ include_directories(
 find_package(Eigen3 REQUIRED)
 include_directories(${EIGEN3_INCLUDE_DIR})
 
-add_executable(NewtonMethod src/newtom_method.cpp )
+add_executable(NewtonMethod src/newton_method.cpp)
 
-target_link_libraries(OccupiedGridObstacleAvoidanceRos
+target_link_libraries(NewtonMethod
   ${catkin_LIBRARIES}
 )
